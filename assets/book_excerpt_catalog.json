@@ -1,0 +1,442 @@
+[
+  {
+    "id": "book_cubemx_project_excerpt",
+    "book_id": "book_cubemx_intro",
+    "chapter": "10.3 使用 STM32CubeMX 新建工程 / 10.4 使用建议",
+    "category": [
+      "gpio",
+      "usart",
+      "adc",
+      "dma",
+      "tim",
+      "iic",
+      "spi",
+      "oled",
+      "sensor"
+    ],
+    "keywords": [
+      "cubemx",
+      "新建工程",
+      "代码生成",
+      "project manager",
+      "ioc",
+      "使用建议"
+    ],
+    "summary": "这组页面适合在真正开始做 CubeMX HAL 工程前快速扫一遍，尤其是项目创建和生成建议。",
+    "excerpt": "如果你已经决定用 CubeMX HAL 路线，就优先看 10.3 和 10.4。前者解决工程怎么建，后者解决生成代码后如何与用户代码配合，适合在开始写 `Core/Inc` 和 `Core/Src` 之前先读。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "155-167",
+    "key_pages": [
+      155,
+      156,
+      157,
+      167
+    ]
+  },
+  {
+    "id": "book_tim_pwm_excerpt",
+    "book_id": "book_tim_pwm",
+    "chapter": "21.3 通用定时器 PWM 输出实验",
+    "category": [
+      "tim",
+      "pwm"
+    ],
+    "keywords": [
+      "tim",
+      "pwm",
+      "占空比",
+      "频率",
+      "通道",
+      "gpio复用"
+    ],
+    "summary": "做 PWM 输出时重点看这一节，适合确认通道、频率、占空比和输出引脚的对应关系。",
+    "excerpt": "如果目标是电机、蜂鸣器或背光调光，先看 21.3；重点核对 TIM 通道、GPIO 复用、预分频和自动重装值，再迁移到 CubeMX HAL 工程。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "283-291",
+    "key_pages": [
+      283,
+      284,
+      285
+    ]
+  },
+  {
+    "id": "book_tim_capture_excerpt",
+    "book_id": "book_tim_pwm",
+    "chapter": "21.4 通用定时器输入捕获实验",
+    "category": [
+      "tim",
+      "input_capture",
+      "encoder"
+    ],
+    "keywords": [
+      "input capture",
+      "输入捕获",
+      "频率测量",
+      "脉宽测量",
+      "tim"
+    ],
+    "summary": "做输入捕获、频率测量或脉宽测量时优先看这一节。",
+    "excerpt": "如果任务涉及频率、脉宽或边沿时间测量，先看 21.4；重点看捕获通道选择、引脚复用和程序解析中的测量流程。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "292-301",
+    "key_pages": [
+      292,
+      294,
+      295
+    ]
+  },
+  {
+    "id": "book_adc_dma_single_excerpt",
+    "book_id": "book_adc",
+    "chapter": "31.3 单通道 ADC 采集（DMA 读取）实验",
+    "category": [
+      "adc",
+      "dma"
+    ],
+    "keywords": [
+      "adc",
+      "dma",
+      "单通道",
+      "连续采样",
+      "缓冲区"
+    ],
+    "summary": "做单通道 ADC + DMA 连续采样时优先看这一节。",
+    "excerpt": "如果只采一个模拟量但希望 DMA 自动搬运，先看 31.3；重点核对 ADC 与 DMA 的配合方式、缓冲区更新路径和程序设计部分。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "501-509",
+    "key_pages": [
+      501,
+      502,
+      504
+    ]
+  },
+  {
+    "id": "book_adc_dma_multi_excerpt",
+    "book_id": "book_adc",
+    "chapter": "31.4 多通道 ADC 采集（DMA 读取）实验",
+    "category": [
+      "adc",
+      "dma"
+    ],
+    "keywords": [
+      "adc",
+      "dma",
+      "多通道",
+      "扫描",
+      "rank",
+      "缓冲区"
+    ],
+    "summary": "做多通道 ADC + DMA 时优先看这一节，适合确认扫描顺序和缓冲区组织。",
+    "excerpt": "如果任务涉及多个 ADC 通道，优先看 31.4；重点关注通道顺序、扫描模式、DMA 缓冲区布局，以及程序设计里对多路数据的读取方式。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "510-517",
+    "key_pages": [
+      510,
+      511,
+      512
+    ]
+  },
+  {
+    "id": "book_uart_dma_idle_excerpt",
+    "book_id": "book_usart",
+    "chapter": "串口 DMA + 空闲中断阅读组合",
+    "category": [
+      "usart",
+      "dma"
+    ],
+    "keywords": [
+      "uart dma",
+      "usart dma",
+      "idle",
+      "空闲中断",
+      "串口接收",
+      "环形缓冲",
+      "dma接收"
+    ],
+    "summary": "教材没有单独一章直接讲串口 DMA + 空闲中断，但可以用串口章节和 DMA 章节组合阅读。",
+    "excerpt": "先看第十七章里 USART 的 GPIO 复用、HAL 驱动和程序设计，再看第三十章 DMA 的数据流、FIFO、HAL 驱动。做空闲中断接收时，要把串口中断入口和 DMA 搬运路径一起看，不能只看其中一边。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "229-247, 470-481",
+    "key_pages": [
+      236,
+      238,
+      242,
+      470,
+      476
+    ]
+  },
+  {
+    "id": "book_adc_excerpt",
+    "book_id": "book_adc",
+    "chapter": "第三十一章 ADC 实验",
+    "category": [
+      "adc",
+      "dma"
+    ],
+    "keywords": [
+      "adc",
+      "dma",
+      "采样",
+      "多通道",
+      "连续采样",
+      "扫描模式"
+    ],
+    "summary": "先看 ADC 基础，再按需求跳到单通道、单通道 DMA 或多通道 DMA 小节。",
+    "excerpt": "做 ADC 任务时先建立通道、采样时间、转换模式的整体认识；如果你要做连续采样或缓冲区搬运，再重点看 31.3 和 31.4。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "483-521",
+    "key_pages": [
+      483,
+      488,
+      501,
+      510
+    ]
+  },
+  {
+    "id": "book_tim_excerpt",
+    "book_id": "book_tim_pwm",
+    "chapter": "第二十一章 通用定时器实验",
+    "category": [
+      "tim",
+      "pwm",
+      "input_capture",
+      "encoder"
+    ],
+    "keywords": [
+      "tim",
+      "timer",
+      "通用定时器",
+      "pwm",
+      "输入捕获",
+      "脉冲计数"
+    ],
+    "summary": "这一章总览通用定时器中断、PWM、输入捕获和脉冲计数，适合先建立 TIM 任务的总体地图。",
+    "excerpt": "先看 21.1 明确通用定时器能做什么，再按任务跳到 21.2 中断、21.3 PWM 或 21.4 输入捕获，不要一上来就直接抄寄存器或例程代码。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "270-310",
+    "key_pages": [
+      270,
+      278,
+      283,
+      292
+    ]
+  },
+  {
+    "id": "book_oled_excerpt",
+    "book_id": "book_oled",
+    "chapter": "第二十四章 OLED 显示实验",
+    "category": [
+      "oled",
+      "iic",
+      "spi"
+    ],
+    "keywords": [
+      "oled",
+      "ssd1306",
+      "显存",
+      "显示",
+      "i2c",
+      "spi"
+    ],
+    "summary": "先看接口模式和显存组织，再看硬件设计和程序设计，适合做 OLED 初始点亮与字符显示迁移。",
+    "excerpt": "移植 OLED 时不要只抄显示函数。先确认模块接口模式，再看显存组织和初始化顺序，最后再迁移 24.3 的程序设计部分。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "361-377",
+    "key_pages": [
+      361,
+      362,
+      364,
+      366,
+      368
+    ]
+  },
+  {
+    "id": "book_clock_excerpt",
+    "book_id": "book_clock_system",
+    "chapter": "第十一章 STM32 时钟系统",
+    "category": [
+      "tim",
+      "usart",
+      "adc",
+      "dma"
+    ],
+    "keywords": [
+      "clock",
+      "sysclk",
+      "pll",
+      "apb",
+      "时钟树",
+      "主频",
+      "adc时钟",
+      "串口波特率"
+    ],
+    "summary": "凡是任务涉及波特率、PWM 频率、采样频率、定时器基准或 CubeMX 时钟树，都应先看这一章。",
+    "excerpt": "不要把时钟系统当成纯理论。只要任务涉及串口波特率、PWM、ADC 采样或定时器节拍，就先看 11.1 的时钟树，再看 11.2 的主频修改与时钟使能配置。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "169-179",
+    "key_pages": [
+      169,
+      171,
+      174,
+      179
+    ]
+  },
+  {
+    "id": "book_usart_excerpt",
+    "book_id": "book_usart",
+    "chapter": "第十七章 串口通信实验",
+    "category": [
+      "usart",
+      "dma"
+    ],
+    "keywords": [
+      "usart",
+      "uart",
+      "串口",
+      "printf",
+      "gpio复用",
+      "dma",
+      "空闲中断"
+    ],
+    "summary": "先看串口基础和 GPIO 复用，再看硬件资源与 HAL 驱动，是后续串口 DMA 和空闲中断接收的入口章节。",
+    "excerpt": "做串口任务时先确认 TX/RX 引脚和板载 USB 转串口链路，再看 17.3 的 HAL 驱动和程序解析；扩展 DMA 或空闲中断时也要从这里起步。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "229-247",
+    "key_pages": [
+      229,
+      236,
+      238,
+      242
+    ]
+  },
+  {
+    "id": "book_exti_excerpt",
+    "book_id": "book_exti",
+    "chapter": "第十六章 外部中断实验",
+    "category": [
+      "exti",
+      "key"
+    ],
+    "keywords": [
+      "exti",
+      "外部中断",
+      "按键中断",
+      "nvic",
+      "gpio"
+    ],
+    "summary": "先看 NVIC/EXTI 基础，再看 HAL 驱动和程序解析，适合做板载按键中断和边沿触发输入。",
+    "excerpt": "做 EXTI 任务时优先看中断线与触发边沿，再看 16.3 的 HAL 驱动入口和回调流程，避免只改应用代码却漏掉中断配置。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "217-228",
+    "key_pages": [
+      217,
+      220,
+      223,
+      225
+    ]
+  },
+  {
+    "id": "book_cubemx_intro_excerpt",
+    "book_id": "book_cubemx_intro",
+    "chapter": "第十章 STM32CubeMX 简介",
+    "category": [
+      "gpio",
+      "usart",
+      "adc",
+      "dma",
+      "tim",
+      "iic",
+      "spi",
+      "oled",
+      "sensor"
+    ],
+    "keywords": [
+      "cubemx",
+      "stm32cubemx",
+      "新建工程",
+      "外设配置",
+      "gpio",
+      "dma",
+      "nvic",
+      "代码生成"
+    ],
+    "summary": "做 CubeMX HAL 工程时，先看这一章建立对图形化配置和代码生成边界的整体认识。",
+    "excerpt": "如果任务需要先在 CubeMX 配置外设、时钟树或引脚复用，先看第十章。重点不是安装过程，而是 10.3 新建工程和 10.4 使用建议，明确哪些配置应在 CubeMX 里完成。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "151-167",
+    "key_pages": [
+      151,
+      155,
+      157,
+      167
+    ]
+  },
+  {
+    "id": "book_touchscreen_excerpt",
+    "book_id": "book_touchscreen",
+    "chapter": "第四十章 触摸屏实验",
+    "category": ["touch", "tft"],
+    "keywords": ["touch", "触摸", "触摸屏", "校准", "坐标", "电阻触摸", "电容触摸"],
+    "summary": "先看触摸原理和控制链路，再看硬件设计与程序解析，适合配合实验28做触摸坐标采集、校准和触摸界面联调。",
+    "excerpt": "做触摸任务时，先确认屏幕总线与触摸链路是否共板共享，再按 40.1 到 40.3 的顺序看原理、硬件和程序；如果对应实验28，还要同步检查触摸初始化和 LCD 初始化顺序。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "621-645",
+    "key_pages": [
+      621,
+      626,
+      627,
+      629
+    ]
+  },
+  {
+    "id": "book_hanzi_display_excerpt",
+    "book_id": "book_hanzi_display",
+    "chapter": "第五十二章 汉字显示实验",
+    "category": ["tft"],
+    "keywords": ["hanzi", "font", "gbk", "lcd", "汉字", "字库", "字体", "显示"],
+    "summary": "先确认字库与存储路径，再看硬件设计和程序解析，适合做中文菜单、状态页和界面标题；如用实验36承载字库缓存，也应联动排查。",
+    "excerpt": "做汉字显示时，不要只盯着 LCD 绘图接口；优先确认字库文件、存储介质和加载流程，再看 52.2、52.3 的硬件与程序设计。如果字库准备放进外部 SRAM，还要一起检查 FSMC 和缓存路径。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "821-838",
+    "key_pages": [
+      821,
+      828,
+      829,
+      830
+    ]
+  },
+  {
+    "id": "book_image_display_excerpt",
+    "book_id": "book_image_display",
+    "chapter": "第五十三章 图片显示实验",
+    "category": ["tft"],
+    "keywords": ["image", "picture", "bmp", "jpeg", "gif", "lcd", "图片", "图像", "相框"],
+    "summary": "先看图片格式，再看 SD 卡文件读取和显示流程，适合做图标、数码相框和素材浏览；如用实验13或实验36做显示底层，也建议联动阅读。",
+    "excerpt": "做图片显示时，优先确认目标格式和资源路径，再看 53.2、53.3 的硬件和程序设计；如果图片链路要经过 MCU 屏或外部 SRAM，通常先排查文件系统、缓存路径和屏幕总线。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "839-850",
+    "key_pages": [
+      839,
+      840,
+      841
+    ]
+  },
+  {
+    "id": "book_music_player_excerpt",
+    "book_id": "book_music_player",
+    "chapter": "第五十五章 音乐播放器实验",
+    "category": ["audio"],
+    "keywords": ["audio", "music", "wav", "i2s", "iis", "es8388", "音频", "音乐", "播放器"],
+    "summary": "先建立 WAV、ES8388 和 I2S 的完整链路认知，再看硬件设计和程序解析，适合做本地音频播放。",
+    "excerpt": "做音频播放时，不要把它当成单一外设任务；先看 55.1 的 WAV、ES8388 和 I2S，再看 55.2、55.3 的硬件与程序，实现时同时检查文件源、时钟和 DMA 链路。",
+    "source_pdf": "Stm32F4开发指南.pdf",
+    "page_range": "868-901",
+    "key_pages": [
+      868,
+      870,
+      873,
+      880,
+      882
+    ]
+  }
+]

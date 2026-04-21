@@ -1,0 +1,172 @@
+[
+  {
+    "id": "book_gpio_led",
+    "chapter": "第十三章 跑马灯实验",
+    "category": ["gpio"],
+    "keywords": ["gpio", "gpio输出", "led", "跑马灯"],
+    "summary": "GPIO 输出、LED 控制与基础 HAL GPIO 用法",
+    "use_for": ["LED 控制", "GPIO 输出", "BEEP 输出参考"],
+    "related_examples": ["example_gpio_led"],
+    "cubemx_topics": ["gpio_output"]
+  },
+  {
+    "id": "book_key_input",
+    "chapter": "第十五章 按键输入实验",
+    "category": ["key"],
+    "keywords": ["key", "button", "按键", "按键输入", "按键扫描"],
+    "summary": "GPIO 输入读取与按键扫描基础",
+    "use_for": ["独立按键", "轮询读取", "消抖基础"],
+    "related_examples": ["example_key_input"],
+    "cubemx_topics": ["gpio_input"]
+  },
+  {
+    "id": "book_exti",
+    "chapter": "第十六章 外部中断实验",
+    "category": ["exti"],
+    "keywords": ["exti", "external interrupt", "外部中断", "按键中断", "nvic"],
+    "summary": "EXTI、NVIC、中断触发与处理流程",
+    "use_for": ["按键中断", "边沿触发", "外部事件响应"],
+    "related_examples": ["example_exti_basic"],
+    "cubemx_topics": ["gpio_exti"]
+  },
+  {
+    "id": "book_usart",
+    "chapter": "第十七章 串口通信实验",
+    "category": ["usart", "dma"],
+    "keywords": ["uart", "usart", "串口", "串口通信", "串口接收", "dma", "空闲中断", "dma接收"],
+    "summary": "USART 基础通信、HAL 串口驱动、收发流程，可作为 DMA 接收与空闲中断接收的入口章节",
+    "use_for": ["串口打印", "串口收发", "基础中断接收", "DMA 接收入口"],
+    "related_examples": ["example_usart_basic"],
+    "cubemx_topics": ["uart_enable", "uart_gpio_af", "uart_nvic", "uart_dma"]
+  },
+  {
+    "id": "book_tim_basic",
+    "chapter": "第二十章 基本定时器实验",
+    "category": ["tim"],
+    "keywords": ["tim", "timer", "基本定时器", "中断"],
+    "summary": "TIM6/TIM7 定时中断基础",
+    "use_for": ["周期中断", "节拍定时", "基础定时任务"],
+    "related_examples": [],
+    "cubemx_topics": ["tim_base", "tim_nvic"]
+  },
+  {
+    "id": "book_tim_pwm",
+    "chapter": "第二十一章 通用定时器实验",
+    "category": ["tim", "pwm", "input_capture", "encoder"],
+    "keywords": ["tim", "pwm", "输入捕获", "脉冲计数", "定时器"],
+    "summary": "通用定时器中断、PWM、输入捕获、计数相关内容",
+    "use_for": ["PWM 调速", "频率测量", "脉宽测量", "脉冲统计"],
+    "related_examples": ["example_tim_pwm"],
+    "cubemx_topics": ["tim_pwm", "tim_input_capture"]
+  },
+  {
+    "id": "book_dma",
+    "chapter": "第三十章 DMA 实验",
+    "category": ["dma"],
+    "keywords": ["dma", "搬运", "连续传输", "dma接收", "环形缓冲"],
+    "summary": "DMA 基础、HAL DMA 用法与数据搬运思路",
+    "use_for": ["ADC DMA", "USART DMA", "SPI DMA"],
+    "related_examples": ["example_adc_dma"],
+    "cubemx_topics": ["dma_basic"]
+  },
+  {
+    "id": "book_adc",
+    "chapter": "第三十一章 ADC 实验",
+    "category": ["adc", "dma"],
+    "keywords": ["adc", "采样", "电压", "dma", "多通道", "连续采样"],
+    "summary": "ADC 单通道、多通道与 DMA 采样",
+    "use_for": ["单通道采样", "多通道采样", "ADC+DMA 连续采样"],
+    "related_examples": ["example_adc_dma"],
+    "cubemx_topics": ["adc_enable", "adc_channel", "adc_dma", "adc_trigger"]
+  },
+  {
+    "id": "book_iic",
+    "chapter": "第三十六章 IIC 实验",
+    "category": ["iic"],
+    "keywords": ["iic", "i2c", "eeprom", "scl", "sda"],
+    "summary": "IIC 总线、器件访问流程与驱动思路",
+    "use_for": ["I2C 传感器", "EEPROM", "寄存器读写"],
+    "related_examples": ["example_iic_basic"],
+    "cubemx_topics": ["i2c_enable", "i2c_gpio_af"]
+  },
+  {
+    "id": "book_spi",
+    "chapter": "第三十七章 SPI 实验",
+    "category": ["spi"],
+    "keywords": ["spi", "flash", "sck", "miso", "mosi"],
+    "summary": "SPI 总线、器件访问与基础驱动方式",
+    "use_for": ["SPI 传感器", "SPI Flash", "显示驱动底层通信"],
+    "related_examples": ["example_spi_basic"],
+    "cubemx_topics": ["spi_enable", "spi_gpio_af"]
+  },
+  {
+    "id": "book_oled",
+    "chapter": "第二十四章 OLED 显示实验",
+    "category": ["oled"],
+    "keywords": ["oled", "ssd1306", "oled显示", "字符显示", "oled屏"],
+    "summary": "OLED 初始化、显存组织与基础显示流程",
+    "use_for": ["字符串显示", "调试界面", "基础显示驱动迁移"],
+    "related_examples": ["example_oled_basic"],
+    "cubemx_topics": ["oled_bus"]
+  },
+  {
+    "id": "book_cubemx_intro",
+    "chapter": "第十章 STM32CubeMX 简介",
+    "category": ["cubemx", "clock"],
+    "keywords": ["cubemx", "stm32cubemx", "ioc", "新建工程", "代码生成", "时钟树"],
+    "summary": "CubeMX 新建工程、图形化外设配置、时钟树与代码生成的入门章节",
+    "use_for": ["CubeMX 新建 HAL 工程", "生成 .ioc 工程", "初始外设与时钟树配置"],
+    "related_examples": [],
+    "cubemx_topics": []
+  },
+  {
+    "id": "book_clock_system",
+    "chapter": "第十一章 STM32 时钟系统",
+    "category": ["clock", "tim", "usart", "adc"],
+    "keywords": ["clock", "sysclk", "pll", "apb", "主频", "时钟树", "波特率", "采样率"],
+    "summary": "时钟树、PLL、SYSCLK 与主频修改，适合处理波特率、PWM 频率和采样频率问题",
+    "use_for": ["修改主频", "确认波特率来源", "确认定时器频率", "确认 ADC 时钟"],
+    "related_examples": [],
+    "cubemx_topics": []
+  },
+  {
+    "id": "book_touchscreen",
+    "chapter": "第四十章 触摸屏实验",
+    "category": ["touch", "tft"],
+    "keywords": ["touch", "tp", "触摸", "触摸屏", "触摸坐标", "校准", "电阻触摸", "电容触摸"],
+    "summary": "触摸屏接口、坐标读取与校准流程的入门章节，适合在做触摸 UI 或触摸按键前先建立整体链路认知",
+    "use_for": ["触摸坐标读取", "触摸校准", "触摸事件检测", "触摸屏与显示屏联调"],
+    "related_examples": ["example_display_28_bfdd1f35", "example_display_13_tftlcdmcu_b02ccba6"],
+    "cubemx_topics": ["touch_bus", "touch_panel_flow", "tft_bus", "tft_mcu_panel"]
+  },
+  {
+    "id": "book_hanzi_display",
+    "chapter": "第五十二章 汉字显示实验",
+    "category": ["tft"],
+    "keywords": ["hanzi", "font", "gbk", "lcd", "汉字", "字库", "字体", "显示"],
+    "summary": "聚焦字库准备、汉字编码与 LCD 汉字显示流程，适合做中文界面、菜单和状态页",
+    "use_for": ["汉字界面显示", "字库加载", "中文菜单", "屏幕调试页面"],
+    "related_examples": ["example_display_40_33163495", "example_display_13_tftlcdmcu_b02ccba6", "example_display_36_sram_da3946ea"],
+    "cubemx_topics": ["tft_bus", "tft_mcu_panel", "fsmc_bus", "sram_bus"]
+  },
+  {
+    "id": "book_image_display",
+    "chapter": "第五十三章 图片显示实验",
+    "category": ["tft"],
+    "keywords": ["image", "picture", "bmp", "jpeg", "gif", "lcd", "图片", "图像", "相框"],
+    "summary": "图片格式、文件读取与 LCD 图片显示的入口章节，适合做相框、菜单图标和界面素材显示",
+    "use_for": ["BMP/JPEG/GIF 图片显示", "数码相框", "界面素材加载", "SD 卡图片浏览"],
+    "related_examples": ["example_display_41_f6521049", "example_display_13_tftlcdmcu_b02ccba6", "example_display_36_sram_da3946ea"],
+    "cubemx_topics": ["tft_bus", "tft_mcu_panel", "fsmc_bus", "sram_bus"]
+  },
+  {
+    "id": "book_music_player",
+    "chapter": "第五十五章 音乐播放器实验",
+    "category": ["audio"],
+    "keywords": ["audio", "music", "wav", "i2s", "iis", "es8388", "音频", "音乐", "播放器", "编解码器"],
+    "summary": "音频播放链路、WAV 文件与 ES8388/I2S 协同工作的入口章节，适合做本地音乐播放或提示音扩展",
+    "use_for": ["WAV 音乐播放", "ES8388 联调", "I2S 音频输出", "SD 卡音频文件播放"],
+    "related_examples": ["example_display_43_f80adf15"],
+    "cubemx_topics": ["audio_bus", "dma_basic"]
+  }
+]

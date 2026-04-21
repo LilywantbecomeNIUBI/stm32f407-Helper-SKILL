@@ -1,0 +1,71 @@
+{
+  "skill_name": "stm32f407-contest-hal",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我现在要在 STM32F407 的 CubeMX HAL 工程里做 ADC+DMA 连续采样，先别直接写代码，先告诉我该看哪个本地例程、教材哪一章、CubeMX 先配什么、代码大概放哪些文件。",
+      "expected_output": "应优先指向 ADC/DMA 相关例程和教材章节，给出 ADC、DMA、采样模式相关的 CubeMX 配置建议，并建议 app_adc 模块类文件落点。",
+      "files": [],
+      "expectations": [
+        "输出明确推荐 ADC 或 DMA 相关教材章节，而不是只给泛泛 STM32 解释。",
+        "输出包含 ADC、DMA、采样模式或触发方式相关的 CubeMX 配置建议。",
+        "输出建议把业务代码落到 app_adc.c/.h 或等价的应用层文件，而不是直接要求整体重写 CubeMX 生成文件。"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我把 OLED 接到 STM32F407 的 CubeMX HAL 工程里，当前我只想先确认应该看哪个例程和章节，以及 I2C/SPI、控制脚和文件落点怎么规划。",
+      "expected_output": "应优先指向 OLED 例程和 OLED 章节，不应把 ADC 作为主推荐；应给出 OLED 底层总线、地址或控制脚、文件落点建议。",
+      "files": [],
+      "expectations": [
+        "输出优先推荐 OLED 相关教材章节或例程，而不是把 ADC 或 DMA 作为主推荐。",
+        "输出明确区分 OLED 可能走 I2C 或 SPI，并要求先确认总线和控制脚。",
+        "输出建议把显示驱动落到 bsp_oled.c/.h、app_display.c/.h 或等价文件。"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "我想把板载按键做成外部中断，工程是 STM32F407 CubeMX HAL，先帮我定位该看哪个例程和章节，再给 CubeMX 配置要点和文件修改计划。",
+      "expected_output": "应优先指向按键输入和外部中断相关例程/章节，给出 GPIO 输入、EXTI、NVIC 相关配置建议，并建议 key/exti 模块落点。",
+      "files": [],
+      "expectations": [
+        "输出优先推荐按键输入或外部中断相关教材章节或例程。",
+        "输出包含 GPIO 输入、EXTI 触发边沿和 NVIC 开启等关键配置项。",
+        "输出建议把业务逻辑落到 app_exti.c/.h、bsp_key.c/.h 或等价文件，而不是直接把全部逻辑塞进 main.c。"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "我要在 STM32F407 HAL 工程里做串口 DMA + 空闲中断接收，先不要展开实现细节，先帮我定位例程、教材、CubeMX 配置项和建议文件落点。",
+      "expected_output": "应优先把串口相关例程或章节排到 ADC DMA 之前，并给出 USART、DMA、NVIC 以及 app_uart 文件落点建议。",
+      "files": [],
+      "expectations": [
+        "输出优先推荐串口通信章节或串口 DMA + 空闲中断阅读组合，而不是把 ADC DMA 排在前面。",
+        "输出包含 USART、DMA、NVIC 和空闲中断相关配置建议。",
+        "输出建议把接收状态机或上层逻辑落到 app_uart.c/.h 或等价文件。"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "我刚新建了一个 STM32CubeMX HAL 工程，路径是 E:\\STM32_project\\new_f407_demo 。工程里已经有 .ioc，但还没有 stm32-cubemx-rules.json。你先不要直接改代码，先判断这个工程能不能安全开始开发，并告诉我下一步该做什么。",
+      "expected_output": "应先识别到这是 CubeMX HAL 工程但缺少规则文件，不应直接进入多文件代码修改；应明确建议先生成 stm32-cubemx-rules.json。",
+      "files": [],
+      "expectations": [
+        "输出明确指出当前工程缺少 stm32-cubemx-rules.json。",
+        "输出状态应体现需要先生成规则文件，而不是直接开始多文件代码修改。",
+        "输出包含 generate_cubemx_rules.py 的生成建议或等价命令。"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "请检查 E:\\STM32_project\\STM32F4_test 这个工程现在哪些文件是 CubeMX 自动生成的，哪些文件只能改 USER CODE 区块，哪些文件适合放我自己的业务逻辑。先不要写代码，只做文件归属判断。",
+      "expected_output": "应正确识别 .ioc 是 CubeMX 工程清单，main.c / stm32f4xx_it.c / stm32f4xx_hal_msp.c 等属于 CubeMX 管理文件，并说明 app_*.c/.h、bsp_*.c/.h 适合作为用户自管文件。",
+      "files": [],
+      "expectations": [
+        "输出明确指出 .ioc 文件属于 CubeMX 管理，只能在 CubeMX 中修改。",
+        "输出明确指出 main.c、stm32f4xx_it.c 或等价生成文件默认只能改 USER CODE 区块或应谨慎修改。",
+        "输出明确指出 app_*.c/.h、bsp_*.c/.h 这类文件适合承载用户业务逻辑和长期维护。"
+      ]
+    }
+  ]
+}

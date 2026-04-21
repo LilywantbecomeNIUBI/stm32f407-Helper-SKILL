@@ -1,0 +1,1326 @@
+[
+    {
+        "id": "example_display_13_tftlcdmcu_b02ccba6",
+        "title": "实验13 TFTLCD（MCU屏）实验",
+        "path": "display/实验13 TFTLCD（MCU屏）实验",
+        "category": [
+            "display",
+            "tft"
+        ],
+        "summary": "TFTLCD(MCU屏) 实验 学习彩色TFTLCD（MCU屏）的使用 1 使用探索者开发板丝印标号为TFTLCD的排座连接ALIENTEK TFTLCD模块(仅限MCU屏模块)，实现 TFTLCD模块的显示，下载成功后，通过把LCD模块插...",
+        "description": "TFTLCD(MCU屏) 实验 学习彩色TFTLCD（MCU屏）的使用 1 使用探索者开发板丝印标号为TFTLCD的排座连接ALIENTEK TFTLCD模块(仅限MCU屏模块)，实现 TFTLCD模块的显示，下载成功后，通过把LCD模块插入底板上的TFTLCD模块接口，按下复位之后，就",
+        "keywords": [
+            "tftlcd",
+            "mcu",
+            "display",
+            "alientek",
+            "lcd",
+            "实验",
+            "学习彩色",
+            "的使用",
+            "使用探索者开发板丝印标号",
+            "的排座连接",
+            "模块",
+            "仅限"
+        ],
+        "core_files_to_read": [
+            "display/实验13 TFTLCD（MCU屏）实验/readme.txt",
+            "display/实验13 TFTLCD（MCU屏）实验/User/main.c",
+            "display/实验13 TFTLCD（MCU屏）实验/User/main1.c",
+            "display/实验13 TFTLCD（MCU屏）实验/User/main2.c",
+            "display/实验13 TFTLCD（MCU屏）实验/User/stm32f4xx_it.c",
+            "display/实验13 TFTLCD（MCU屏）实验/User/stm32f4xx_hal_conf.h",
+            "display/实验13 TFTLCD（MCU屏）实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_28_bfdd1f35",
+        "title": "实验28 触摸屏实验",
+        "path": "display/实验28 触摸屏实验",
+        "category": [
+            "display",
+            "touch"
+        ],
+        "summary": "触摸屏 实验 学习电阻式/电容式触摸屏的使用 1 本实验代码,开机的时候先通过LCD ID检测是电容屏（ALIENTEK 4.3寸/7寸/10.1电容触摸屏） 还是电阻屏（ALIENTEK 2.4/2.8/3.5寸电阻屏），然后进入相关的测...",
+        "description": "触摸屏 实验 学习电阻式/电容式触摸屏的使用 1 本实验代码,开机的时候先通过LCD ID检测是电容屏（ALIENTEK 4.3寸/7寸/10.1电容触摸屏） 还是电阻屏（ALIENTEK 2.4/2.8/3.5寸电阻屏），然后进入相关的测试。",
+        "keywords": [
+            "display",
+            "lcd",
+            "id",
+            "alientek",
+            "实验",
+            "触摸屏实验",
+            "触摸屏",
+            "学习电阻式",
+            "电容式触摸屏的使用",
+            "本实验代码",
+            "开机的时候先通过",
+            "检测是电容屏"
+        ],
+        "core_files_to_read": [
+            "display/实验28 触摸屏实验/readme.txt",
+            "display/实验28 触摸屏实验/User/main.c",
+            "display/实验28 触摸屏实验/User/stm32f4xx_it.c",
+            "display/实验28 触摸屏实验/User/stm32f4xx_hal_conf.h",
+            "display/实验28 触摸屏实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_36_sram_da3946ea",
+        "title": "实验36 外部SRAM实验",
+        "path": "display/实验36 外部SRAM实验",
+        "category": [
+            "display",
+            "gpio",
+            "tft",
+            "fsmc",
+            "sram"
+        ],
+        "summary": "外部SRAM 实验 学习STM32通过FSMC驱动外部SRAM，扩展设备可访问内存 1 本实验开机后，显示提示信息，然后按下KEY0按键，即测试外部SRAM容量大小并显示在LCD上。 按下KEY1按键，即显示预存在外部SRAM的数据。DS0...",
+        "description": "外部SRAM 实验 学习STM32通过FSMC驱动外部SRAM，扩展设备可访问内存 1 本实验开机后，显示提示信息，然后按下KEY0按键，即测试外部SRAM容量大小并显示在LCD上。 按下KEY1按键，即显示预存在外部SRAM的数据。DS0指示程序运行状态。",
+        "keywords": [
+            "sram",
+            "display",
+            "fsmc",
+            "key0",
+            "lcd",
+            "key1",
+            "ds0",
+            "实验",
+            "外部",
+            "学习",
+            "通过",
+            "驱动外部"
+        ],
+        "core_files_to_read": [
+            "display/实验36 外部SRAM实验/readme.txt",
+            "display/实验36 外部SRAM实验/User/main.c",
+            "display/实验36 外部SRAM实验/User/stm32f4xx_it.c",
+            "display/实验36 外部SRAM实验/User/stm32f4xx_hal_conf.h",
+            "display/实验36 外部SRAM实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_38_sd_6064ad54",
+        "title": "实验38 SD卡实验",
+        "path": "display/实验38 SD卡实验",
+        "category": [
+            "display",
+            "usart"
+        ],
+        "summary": "SD卡 实验 学习STM32的SDMMC接口的使用，并驱动SD卡 1 本实验开机的时候先初始化SD卡，如果SD卡初始化完成，则提示LCD初始化成功。 按下KEY0，读取SD卡扇区0的数据，然后通过串口发送到电脑。如果没初始化通过，则在LCD...",
+        "description": "SD卡 实验 学习STM32的SDMMC接口的使用，并驱动SD卡 1 本实验开机的时候先初始化SD卡，如果SD卡初始化完成，则提示LCD初始化成功。 按下KEY0，读取SD卡扇区0的数据，然后通过串口发送到电脑。如果没初始化通过，则在LCD上提示初始化失败。",
+        "keywords": [
+            "sd",
+            "display",
+            "sdmmc",
+            "lcd",
+            "key0",
+            "实验",
+            "卡实验",
+            "学习",
+            "接口的使用",
+            "并驱动",
+            "本实验开机的时候先初始化",
+            "如果"
+        ],
+        "core_files_to_read": [
+            "display/实验38 SD卡实验/readme.txt",
+            "display/实验38 SD卡实验/User/main.c",
+            "display/实验38 SD卡实验/User/stm32f4xx_it.c",
+            "display/实验38 SD卡实验/User/stm32f4xx_hal_conf.h",
+            "display/实验38 SD卡实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_39_fatfs_90747292",
+        "title": "实验39 FATFS实验",
+        "path": "display/实验39 FATFS实验",
+        "category": [
+            "display",
+            "spi"
+        ],
+        "summary": "FATFS 实验 学习FATFS,掌握文件系统使用(读/写/删除/创建文件等操作) 1 本实验开机的时候先初始化SD卡，初始化成功之后，注册两个工作区（一个给SD卡用，一个给SPI FLASH 用），然后获取SD卡的容量和剩余空间，并显示在...",
+        "description": "FATFS 实验 学习FATFS,掌握文件系统使用(读/写/删除/创建文件等操作) 1 本实验开机的时候先初始化SD卡，初始化成功之后，注册两个工作区（一个给SD卡用，一个给SPI FLASH 用），然后获取SD卡的容量和剩余空间，并显示在LCD模块上，最后等待USMART输入指令进行各项测试。",
+        "keywords": [
+            "fatfs",
+            "display",
+            "sd",
+            "spi",
+            "flash",
+            "lcd",
+            "usmart",
+            "实验",
+            "学习",
+            "掌握文件系统使用",
+            "删除",
+            "创建文件等操作"
+        ],
+        "core_files_to_read": [
+            "display/实验39 FATFS实验/readme.txt",
+            "display/实验39 FATFS实验/User/main.c",
+            "display/实验39 FATFS实验/User/stm32f4xx_it.c",
+            "display/实验39 FATFS实验/User/stm32f4xx_hal_conf.h",
+            "display/实验39 FATFS实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_40_33163495",
+        "title": "实验40 汉字显示实验",
+        "path": "display/实验40 汉字显示实验",
+        "category": [
+            "display"
+        ],
+        "summary": "汉字显示 实验 学习汉字显示原理,掌握字库制作以及LCD显示汉字的方法 1 本实验开机的时候先检测norflash中是否已经存在字库，如果存在，则按次序显示汉字(四种字体都显示)。 如果没有，则检测SD卡和文件系统，并查找SYSTEM文件夹...",
+        "description": "汉字显示 实验 学习汉字显示原理,掌握字库制作以及LCD显示汉字的方法 1 本实验开机的时候先检测norflash中是否已经存在字库，如果存在，则按次序显示汉字(四种字体都显示)。 如果没有，则检测SD卡和文件系统，并查找SYSTEM文件夹下的FONT文件夹，在该文件夹内查找UNIGBK.BIN、",
+        "keywords": [
+            "display",
+            "lcd",
+            "norflash",
+            "sd",
+            "system",
+            "font",
+            "unigbk",
+            "bin",
+            "实验",
+            "汉字显示实验",
+            "汉字显示",
+            "学习汉字显示原理"
+        ],
+        "core_files_to_read": [
+            "display/实验40 汉字显示实验/readme.txt",
+            "display/实验40 汉字显示实验/User/main.c",
+            "display/实验40 汉字显示实验/User/stm32f4xx_it.c",
+            "display/实验40 汉字显示实验/User/stm32f4xx_hal_conf.h",
+            "display/实验40 汉字显示实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_41_f6521049",
+        "title": "实验41 图片显示实验",
+        "path": "display/实验41 图片显示实验",
+        "category": [
+            "display"
+        ],
+        "summary": "图片显示 实验 学习在STM32上面的图片显示方法,实现一个简单的数码相框. 1 本实验开机的时候先检测字库，然后检测SD卡是否存在，如果SD卡存在，则开始查找SD卡根目录下的 PICTURE文件夹，如果找到则显示该文件夹下面的图片文件（支...",
+        "description": "图片显示 实验 学习在STM32上面的图片显示方法,实现一个简单的数码相框. 1 本实验开机的时候先检测字库，然后检测SD卡是否存在，如果SD卡存在，则开始查找SD卡根目录下的 PICTURE文件夹，如果找到则显示该文件夹下面的图片文件（支持bmp、jpg、jpeg或gif格式），循环",
+        "keywords": [
+            "display",
+            "sd",
+            "picture",
+            "bmp",
+            "jpg",
+            "jpeg",
+            "gif",
+            "实验",
+            "图片显示实验",
+            "图片显示",
+            "学习在",
+            "上面的图片显示方法"
+        ],
+        "core_files_to_read": [
+            "display/实验41 图片显示实验/readme.txt",
+            "display/实验41 图片显示实验/User/main.c",
+            "display/实验41 图片显示实验/User/stm32f4xx_it.c",
+            "display/实验41 图片显示实验/User/stm32f4xx_hal_conf.h",
+            "display/实验41 图片显示实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_display_43_f80adf15",
+        "title": "实验43 音乐播放器实验",
+        "path": "display/实验43 音乐播放器实验",
+        "category": [
+            "display",
+            "audio"
+        ],
+        "summary": "音乐播放器 实验 学习ES8388和STM32 IIS功能的使用，了解WAV编码，实现一个简单的WAV音乐播放器 1 本实验开机后，先初始化各外设，然后检测字库是否存在，如果检测无问题，则开始循环播放SD卡MUSIC文 件夹里面的歌曲（必须...",
+        "description": "音乐播放器 实验 学习ES8388和STM32 IIS功能的使用，了解WAV编码，实现一个简单的WAV音乐播放器 1 本实验开机后，先初始化各外设，然后检测字库是否存在，如果检测无问题，则开始循环播放SD卡MUSIC文 件夹里面的歌曲（必须在SD卡根目录建立一个MUSIC文件夹，并存放歌曲（仅支持wav格式）在里面），在",
+        "keywords": [
+            "display",
+            "es8388",
+            "iis",
+            "wav",
+            "sd",
+            "music",
+            "实验",
+            "音乐播放器实验",
+            "音乐播放器",
+            "学习",
+            "功能的使用",
+            "了解"
+        ],
+        "core_files_to_read": [
+            "display/实验43 音乐播放器实验/readme.txt",
+            "display/实验43 音乐播放器实验/User/APP/audioplay.c",
+            "display/实验43 音乐播放器实验/User/main.c",
+            "display/实验43 音乐播放器实验/User/stm32f4xx_it.c",
+            "display/实验43 音乐播放器实验/User/APP/audioplay.h",
+            "display/实验43 音乐播放器实验/User/stm32f4xx_hal_conf.h",
+            "display/实验43 音乐播放器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_1_61164635",
+        "title": "实验1 跑马灯实验",
+        "path": "hal/实验1 跑马灯实验",
+        "category": [
+            "hal",
+            "gpio"
+        ],
+        "summary": "跑马灯 实验 学习GPIO作为输出的使用",
+        "description": "跑马灯 实验 学习GPIO作为输出的使用",
+        "keywords": [
+            "gpio",
+            "实验",
+            "跑马灯实验",
+            "跑马灯",
+            "学习",
+            "作为输出的使用"
+        ],
+        "core_files_to_read": [
+            "hal/实验1 跑马灯实验/readme.txt",
+            "hal/实验1 跑马灯实验/User/main.c",
+            "hal/实验1 跑马灯实验/User/stm32f4xx_it.c",
+            "hal/实验1 跑马灯实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验1 跑马灯实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_10_10_1_pwm_aaae9b24",
+        "title": "实验10-1 高级定时器输出指定个数PWM实验",
+        "path": "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验",
+        "category": [
+            "hal",
+            "tim",
+            "pwm"
+        ],
+        "summary": "高级定时器输出指定个数PWM 实验 学习高级定时器输出指定个数PWM的功能 1 上电默认输出5次PWM波形。 2 用杜邦线连接PC6和PF10, 然后在程序里面将PF10设置成浮空输入",
+        "description": "高级定时器输出指定个数PWM 实验 学习高级定时器输出指定个数PWM的功能 1 上电默认输出5次PWM波形。 2 用杜邦线连接PC6和PF10, 然后在程序里面将PF10设置成浮空输入",
+        "keywords": [
+            "pwm",
+            "pc6",
+            "pf10",
+            "实验",
+            "高级定时器输出指定个数",
+            "高级定时器实验",
+            "学习高级定时器输出指定个",
+            "的功能",
+            "上电默认输出",
+            "波形",
+            "用杜邦线连接",
+            "然后在程序里面将"
+        ],
+        "core_files_to_read": [
+            "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验/readme.txt",
+            "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验/User/main.c",
+            "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验/User/stm32f4xx_it.c",
+            "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验10 高级定时器实验/实验10-1 高级定时器输出指定个数PWM实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_10_10_2_16ef4aac",
+        "title": "实验10-2 高级定时器输出比较模式实验",
+        "path": "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验",
+        "category": [
+            "hal",
+            "tim",
+            "pwm"
+        ],
+        "summary": "高级定时器输出比较模式 实验 学习高级定时器输出比较模式功能 1 利用TIM8_CH1、TIM8_CH2、TIM8_CH3、TIM8_CH4这4路通道做输出比较模式PWM输出，实现50%占空比, 不同相位控制，分别是相位25%、相位50%...",
+        "description": "高级定时器输出比较模式 实验 学习高级定时器输出比较模式功能 1 利用TIM8_CH1、TIM8_CH2、TIM8_CH3、TIM8_CH4这4路通道做输出比较模式PWM输出，实现50%占空比, 不同相位控制，分别是相位25%、相位50%、相位75%、相位100%，请使用示波器观察(多个通道同时接入观察波形更容易知道相位不同的效果)。",
+        "keywords": [
+            "tim8_ch1",
+            "tim8_ch2",
+            "tim8_ch3",
+            "tim8_ch4",
+            "pwm",
+            "实验",
+            "高级定时器输出比较模式实",
+            "高级定时器实验",
+            "高级定时器输出比较模式",
+            "学习高级定时器输出比较模",
+            "式功能",
+            "利用"
+        ],
+        "core_files_to_read": [
+            "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验/readme.txt",
+            "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验/User/main.c",
+            "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验/User/stm32f4xx_it.c",
+            "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验10 高级定时器实验/实验10-2 高级定时器输出比较模式实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_10_10_3_62a4d442",
+        "title": "实验10-3 高级定时器互补输出带死区控制实验",
+        "path": "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim",
+            "pwm"
+        ],
+        "summary": "高级定时器互补输出带死区控制 实验 学习高级定时器互补输出带死区控制功能 刹车脚电平释放（恢复为低）时，PE9和PE8重新输出PWM波。 3 LED0闪烁,提示程序运行。",
+        "description": "高级定时器互补输出带死区控制 实验 学习高级定时器互补输出带死区控制功能 刹车脚电平释放（恢复为低）时，PE9和PE8重新输出PWM波。 3 LED0闪烁,提示程序运行。",
+        "keywords": [
+            "pe9",
+            "pe8",
+            "pwm",
+            "led0",
+            "实验",
+            "高级定时器互补输出带死区",
+            "控制实验",
+            "高级定时器实验",
+            "控制",
+            "学习高级定时器互补输出带",
+            "死区控制功能",
+            "刹车脚电平释放"
+        ],
+        "core_files_to_read": [
+            "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验/readme.txt",
+            "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验/User/main.c",
+            "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验/User/stm32f4xx_it.c",
+            "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验10 高级定时器实验/实验10-3 高级定时器互补输出带死区控制实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_10_10_4_pwm_5cd54504",
+        "title": "实验10-4 高级定时器PWM输入模式实验",
+        "path": "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验",
+        "category": [
+            "hal",
+            "usart",
+            "tim",
+            "pwm"
+        ],
+        "summary": "高级定时器PWM输入模式 实验 学习高级定时器PWM输入模式功能 2 把PF9输出的PWM波用杜邦线接入PC6，可以通过串口调试助手打印PWM的信息。 3 DS1（GREEN）闪烁 ,提示程序运行。",
+        "description": "高级定时器PWM输入模式 实验 学习高级定时器PWM输入模式功能 2 把PF9输出的PWM波用杜邦线接入PC6，可以通过串口调试助手打印PWM的信息。 3 DS1（GREEN）闪烁 ,提示程序运行。",
+        "keywords": [
+            "pwm",
+            "pf9",
+            "pc6",
+            "ds1",
+            "green",
+            "实验",
+            "高级定时器",
+            "输入模式实验",
+            "高级定时器实验",
+            "输入模式",
+            "学习高级定时器",
+            "输入模式功能"
+        ],
+        "core_files_to_read": [
+            "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验/readme.txt",
+            "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验/User/main.c",
+            "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验/User/stm32f4xx_it.c",
+            "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验10 高级定时器实验/实验10-4 高级定时器PWM输入模式实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_18_dma_f9fbc1b1",
+        "title": "实验18 DMA实验",
+        "path": "hal/实验18 DMA实验",
+        "category": [
+            "hal",
+            "gpio",
+            "usart",
+            "dma"
+        ],
+        "summary": "DMA 实验 学习STM32 DMA功能的使用 1 按下按键KEY0，串口1以DMA方式发送数据，同时在LCD上面显示传送进度。 打开串口调试助手，可以收到DMA发送的内容。",
+        "description": "DMA 实验 学习STM32 DMA功能的使用 1 按下按键KEY0，串口1以DMA方式发送数据，同时在LCD上面显示传送进度。 打开串口调试助手，可以收到DMA发送的内容。",
+        "keywords": [
+            "dma",
+            "key0",
+            "lcd",
+            "实验",
+            "学习",
+            "功能的使用",
+            "按下按键",
+            "串口",
+            "方式发送数据",
+            "同时在",
+            "上面显示传送进度",
+            "打开串口调试助手"
+        ],
+        "core_files_to_read": [
+            "hal/实验18 DMA实验/readme.txt",
+            "hal/实验18 DMA实验/User/main.c",
+            "hal/实验18 DMA实验/User/stm32f4xx_it.c",
+            "hal/实验18 DMA实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验18 DMA实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_19_adc_19_1_adc_76c888b6",
+        "title": "实验19-1 单通道ADC采集实验",
+        "path": "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验",
+        "category": [
+            "hal",
+            "gpio",
+            "adc"
+        ],
+        "summary": "单通道ADC采集 实验 学习STM32内部ADC的使用 2 可以用杜邦线将ADC接到RV1标号的可调电阻上，通过螺丝刀调节RV1可变电阻端的电压测量ADC结果。 3 LED0闪烁，提示程序运行。",
+        "description": "单通道ADC采集 实验 学习STM32内部ADC的使用 2 可以用杜邦线将ADC接到RV1标号的可调电阻上，通过螺丝刀调节RV1可变电阻端的电压测量ADC结果。 3 LED0闪烁，提示程序运行。",
+        "keywords": [
+            "adc",
+            "rv1",
+            "led0",
+            "实验",
+            "单通道",
+            "采集实验",
+            "采集",
+            "学习",
+            "内部",
+            "的使用",
+            "可以用杜邦线将",
+            "接到"
+        ],
+        "core_files_to_read": [
+            "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验/readme.txt",
+            "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验/User/main.c",
+            "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验/User/stm32f4xx_it.c",
+            "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验19 ADC实验/实验19-1 单通道ADC采集实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_19_adc_19_2_adcdma_5dd229f1",
+        "title": "实验19-2 单通道ADC采集（DMA）实验",
+        "path": "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验",
+        "category": [
+            "hal",
+            "gpio",
+            "dma",
+            "adc"
+        ],
+        "summary": "单通道ADC采集(DMA读取) 实验 学习STM32内部ADC的使用 2 可以用杜邦线将ADC接到RV1标号的可调电阻上，通过螺丝刀调节RV1可变电阻端的电压测量ADC结果。 3 LED0闪烁，提示程序运行。",
+        "description": "单通道ADC采集(DMA读取) 实验 学习STM32内部ADC的使用 2 可以用杜邦线将ADC接到RV1标号的可调电阻上，通过螺丝刀调节RV1可变电阻端的电压测量ADC结果。 3 LED0闪烁，提示程序运行。",
+        "keywords": [
+            "adc",
+            "dma",
+            "rv1",
+            "led0",
+            "实验",
+            "单通道",
+            "采集",
+            "读取",
+            "学习",
+            "内部",
+            "的使用",
+            "可以用杜邦线将"
+        ],
+        "core_files_to_read": [
+            "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验/readme.txt",
+            "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验/User/main.c",
+            "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验/User/stm32f4xx_it.c",
+            "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验19 ADC实验/实验19-2 单通道ADC采集（DMA）实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_19_adc_19_3_adcdma_f3b92391",
+        "title": "实验19-3 多通道ADC采集（DMA）实验",
+        "path": "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验",
+        "category": [
+            "hal",
+            "gpio",
+            "dma",
+            "adc"
+        ],
+        "summary": "多通道ADC采集(DMA读取) 实验 学习STM32多通道ADC采集(DMA读取)的使用 1 ADC1读取通道0~5的电压，在LCD模块上面显示对应的ADC转换值以及换算成电压后的电压值。 3 LED0闪烁,提示程序运行。",
+        "description": "多通道ADC采集(DMA读取) 实验 学习STM32多通道ADC采集(DMA读取)的使用 1 ADC1读取通道0~5的电压，在LCD模块上面显示对应的ADC转换值以及换算成电压后的电压值。 3 LED0闪烁,提示程序运行。",
+        "keywords": [
+            "adc",
+            "dma",
+            "adc1",
+            "lcd",
+            "led0",
+            "实验",
+            "多通道",
+            "采集",
+            "读取",
+            "学习",
+            "的使用",
+            "读取通道"
+        ],
+        "core_files_to_read": [
+            "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验/readme.txt",
+            "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验/User/main.c",
+            "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验/User/stm32f4xx_it.c",
+            "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验19 ADC实验/实验19-3 多通道ADC采集（DMA）实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_19_adc_19_4_adc16_e78c6ea1",
+        "title": "实验19-4 单通道ADC过采样（16位分辨率）实验",
+        "path": "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验",
+        "category": [
+            "hal",
+            "gpio",
+            "adc",
+            "touch"
+        ],
+        "summary": "单通道ADC过采样 实验 学习STM32单通道ADC过采样的使用 2 可以用杜邦线接ADC引脚到VCC、GND、TPAD等测试转换效果； 3 LED0闪烁，提示程序运行。",
+        "description": "单通道ADC过采样 实验 学习STM32单通道ADC过采样的使用 2 可以用杜邦线接ADC引脚到VCC、GND、TPAD等测试转换效果； 3 LED0闪烁，提示程序运行。",
+        "keywords": [
+            "adc",
+            "vcc",
+            "gnd",
+            "tpad",
+            "led0",
+            "实验",
+            "单通道",
+            "过采样",
+            "位分辨率",
+            "学习",
+            "过采样的使用",
+            "可以用杜邦线接"
+        ],
+        "core_files_to_read": [
+            "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验/readme.txt",
+            "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验/User/main.c",
+            "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验/User/stm32f4xx_it.c",
+            "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验19 ADC实验/实验19-4 单通道ADC过采样（16位分辨率）实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_2_abe62437",
+        "title": "实验2 蜂鸣器实验",
+        "path": "hal/实验2 蜂鸣器实验",
+        "category": [
+            "hal",
+            "gpio"
+        ],
+        "summary": "蜂鸣器 实验 学习GPIO作为输出的使用",
+        "description": "蜂鸣器 实验 学习GPIO作为输出的使用",
+        "keywords": [
+            "gpio",
+            "实验",
+            "蜂鸣器实验",
+            "蜂鸣器",
+            "学习",
+            "作为输出的使用"
+        ],
+        "core_files_to_read": [
+            "hal/实验2 蜂鸣器实验/readme.txt",
+            "hal/实验2 蜂鸣器实验/User/main.c",
+            "hal/实验2 蜂鸣器实验/User/stm32f4xx_it.c",
+            "hal/实验2 蜂鸣器实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验2 蜂鸣器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_22_dac_22_1_dac_c8ce5b16",
+        "title": "实验22-1 DAC输出实验",
+        "path": "hal/实验22 DAC实验/实验22-1 DAC输出实验",
+        "category": [
+            "hal",
+            "gpio",
+            "adc",
+            "dac"
+        ],
+        "summary": "DAC输出 实验 学习STM32内部DAC的使用 1 本实验需要跳线帽短连接(P11)的ADC和DAC，再使用KEY1/KEY_UP两个按键，控制STM32内部DAC模块的通道1 输出电压，通过ADC1的通道5采集DAC的输出电压，在LCD...",
+        "description": "DAC输出 实验 学习STM32内部DAC的使用 1 本实验需要跳线帽短连接(P11)的ADC和DAC，再使用KEY1/KEY_UP两个按键，控制STM32内部DAC模块的通道1 输出电压，通过ADC1的通道5采集DAC的输出电压，在LCD模块上面显示ADC获取到的电压值以及DAC的设定",
+        "keywords": [
+            "dac",
+            "p11",
+            "adc",
+            "key1",
+            "key_up",
+            "adc1",
+            "lcd",
+            "实验",
+            "输出实验",
+            "输出",
+            "学习",
+            "内部"
+        ],
+        "core_files_to_read": [
+            "hal/实验22 DAC实验/实验22-1 DAC输出实验/readme.txt",
+            "hal/实验22 DAC实验/实验22-1 DAC输出实验/User/main.c",
+            "hal/实验22 DAC实验/实验22-1 DAC输出实验/User/stm32f4xx_it.c",
+            "hal/实验22 DAC实验/实验22-1 DAC输出实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验22 DAC实验/实验22-1 DAC输出实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_22_dac_22_2_dac_90f6f8f9",
+        "title": "实验22-2 DAC输出三角波实验",
+        "path": "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验",
+        "category": [
+            "hal",
+            "gpio",
+            "dac",
+            "audio"
+        ],
+        "summary": "DAC输出三角波 实验 学习 DAC输出三角波的使用 1 本实验使用DAC输出三角波，通过KEY0/KEY1两个按键，控制DAC1的通道1输出两种三角波，需要通过示波器 接PA4进行观察。也可以通过usmart调用dac_triangula...",
+        "description": "DAC输出三角波 实验 学习 DAC输出三角波的使用 1 本实验使用DAC输出三角波，通过KEY0/KEY1两个按键，控制DAC1的通道1输出两种三角波，需要通过示波器 接PA4进行观察。也可以通过usmart调用dac_triangular_wave函数，来控制输出哪种三角波。",
+        "keywords": [
+            "dac",
+            "key0",
+            "key1",
+            "dac1",
+            "pa4",
+            "usmart",
+            "dac_triangula",
+            "dac_triangular_wave",
+            "实验",
+            "输出三角波实验",
+            "输出三角波",
+            "学习"
+        ],
+        "core_files_to_read": [
+            "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验/readme.txt",
+            "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验/User/main.c",
+            "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验/User/stm32f4xx_it.c",
+            "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验22 DAC实验/实验22-2 DAC输出三角波实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_22_dac_22_3_dac_2d839d0b",
+        "title": "实验22-3 DAC输出正弦波实验",
+        "path": "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验",
+        "category": [
+            "hal",
+            "gpio",
+            "dma",
+            "adc",
+            "dac",
+            "tft"
+        ],
+        "summary": "DAC输出正弦波 实验 学习STM32 DAC DMA输出正弦波的使用 1 本实验使用DAC输出正弦波，通过KEY0/KEY1两个按键，控制DAC1的通道1输出两种正弦波，需要通过示波器 接PA4进行观察。TFTLCD显示DAC转换值、电压...",
+        "description": "DAC输出正弦波 实验 学习STM32 DAC DMA输出正弦波的使用 1 本实验使用DAC输出正弦波，通过KEY0/KEY1两个按键，控制DAC1的通道1输出两种正弦波，需要通过示波器 接PA4进行观察。TFTLCD显示DAC转换值、电压值和ADC的电压值。",
+        "keywords": [
+            "dac",
+            "dma",
+            "key0",
+            "key1",
+            "dac1",
+            "pa4",
+            "tftlcd",
+            "adc",
+            "实验",
+            "输出正弦波实验",
+            "输出正弦波",
+            "学习"
+        ],
+        "core_files_to_read": [
+            "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验/readme.txt",
+            "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验/User/main.c",
+            "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验/User/stm32f4xx_it.c",
+            "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验22 DAC实验/实验22-3 DAC输出正弦波实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_23_pwm_dac_dad17d65",
+        "title": "实验23 PWM DAC实验",
+        "path": "hal/实验23 PWM DAC实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim",
+            "pwm",
+            "dac"
+        ],
+        "summary": "PWM DAC 实验 学习STM32定时器通过PWM输出电压,可用于SPWM实现(按正弦规律输出电压,就是SPWM了) 1 本实验利用按键（KEY1/KEY_UP两个按键,或USMART）控制TIM9_CH2的PWM输出 KEY_UP 调高...",
+        "description": "PWM DAC 实验 学习STM32定时器通过PWM输出电压,可用于SPWM实现(按正弦规律输出电压,就是SPWM了) 1 本实验利用按键（KEY1/KEY_UP两个按键,或USMART）控制TIM9_CH2的PWM输出 KEY_UP 调高占空比",
+        "keywords": [
+            "pwm",
+            "dac",
+            "spwm",
+            "key1",
+            "key_up",
+            "usmart",
+            "tim9_ch2",
+            "实验",
+            "学习",
+            "定时器通过",
+            "输出电压",
+            "可用于"
+        ],
+        "core_files_to_read": [
+            "hal/实验23 PWM DAC实验/readme.txt",
+            "hal/实验23 PWM DAC实验/User/main.c",
+            "hal/实验23 PWM DAC实验/User/stm32f4xx_it.c",
+            "hal/实验23 PWM DAC实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验23 PWM DAC实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_24_iic_eabe0ba3",
+        "title": "实验24 IIC实验",
+        "path": "hal/实验24 IIC实验",
+        "category": [
+            "hal",
+            "gpio",
+            "iic"
+        ],
+        "summary": "IIC 实验 学习STM32模拟IIC的使用,驱动24C02实现EEPROM数据读写 1 本实验通过KEY1按键来控制24C02的写入，通过按键KEY0来控制24C02的读取。并在LCD模块 上面显示相关信息。同时，我们可以通过USMART...",
+        "description": "IIC 实验 学习STM32模拟IIC的使用,驱动24C02实现EEPROM数据读写 1 本实验通过KEY1按键来控制24C02的写入，通过按键KEY0来控制24C02的读取。并在LCD模块 上面显示相关信息。同时，我们可以通过USMART控制在24C02的任意地址写入和读取数据。",
+        "keywords": [
+            "iic",
+            "c02",
+            "eeprom",
+            "key1",
+            "key0",
+            "lcd",
+            "usmart",
+            "实验",
+            "学习",
+            "模拟",
+            "的使用",
+            "驱动"
+        ],
+        "core_files_to_read": [
+            "hal/实验24 IIC实验/readme.txt",
+            "hal/实验24 IIC实验/User/main.c",
+            "hal/实验24 IIC实验/User/stm32f4xx_it.c",
+            "hal/实验24 IIC实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验24 IIC实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_25_spi_0c6ce2cb",
+        "title": "实验25 SPI实验",
+        "path": "hal/实验25 SPI实验",
+        "category": [
+            "hal",
+            "gpio",
+            "spi"
+        ],
+        "summary": "SPI 实验 学习STM32 SPI外设的的使用,驱动W25Q128实现SPI FLASH数据读写 1 本实验通过KEY1按键来控制W25Q128的写入，通过另外一个按键KEY0来控制W25Q128的读取。并在LCD模块 上面显示相关信息...",
+        "description": "SPI 实验 学习STM32 SPI外设的的使用,驱动W25Q128实现SPI FLASH数据读写 1 本实验通过KEY1按键来控制W25Q128的写入，通过另外一个按键KEY0来控制W25Q128的读取。并在LCD模块 上面显示相关信息。DS0提示程序正在运行。同时，我们可以通过USMART控制读取W25QXX的ID或者整片擦除。",
+        "keywords": [
+            "spi",
+            "w25q128",
+            "flash",
+            "key1",
+            "key0",
+            "lcd",
+            "ds0",
+            "usmart",
+            "w25qxx",
+            "id",
+            "实验",
+            "学习"
+        ],
+        "core_files_to_read": [
+            "hal/实验25 SPI实验/readme.txt",
+            "hal/实验25 SPI实验/User/main.c",
+            "hal/实验25 SPI实验/User/stm32f4xx_it.c",
+            "hal/实验25 SPI实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验25 SPI实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_27_can_1bde9c2b",
+        "title": "实验27 CAN通信实验",
+        "path": "hal/实验27 CAN通信实验",
+        "category": [
+            "hal",
+            "gpio",
+            "can"
+        ],
+        "summary": "CAN通信 实验 学习CAN控制器的使用 1 本实验代码，可以让STM32F4的CAN工作在环回模式/普通模式下，通过KEY_UP按键切换模式。 默认是环回模式，在环回模式下，按下KEY0，则可以在LCD模块上面看到自发自收的消息。",
+        "description": "CAN通信 实验 学习CAN控制器的使用 1 本实验代码，可以让STM32F4的CAN工作在环回模式/普通模式下，通过KEY_UP按键切换模式。 默认是环回模式，在环回模式下，按下KEY0，则可以在LCD模块上面看到自发自收的消息。",
+        "keywords": [
+            "can",
+            "stm32f4",
+            "key_up",
+            "key0",
+            "lcd",
+            "实验",
+            "通信实验",
+            "通信",
+            "学习",
+            "控制器的使用",
+            "本实验代码",
+            "可以让"
+        ],
+        "core_files_to_read": [
+            "hal/实验27 CAN通信实验/readme.txt",
+            "hal/实验27 CAN通信实验/User/main.c",
+            "hal/实验27 CAN通信实验/User/stm32f4xx_it.c",
+            "hal/实验27 CAN通信实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验27 CAN通信实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_3_179e10d4",
+        "title": "实验3 按键输入实验",
+        "path": "hal/实验3 按键输入实验",
+        "category": [
+            "hal",
+            "gpio"
+        ],
+        "summary": "按键输入 实验 学习GPIO作为输入的使用 1 通过开发板上的四个独立按键控制LED灯或者蜂鸣器: KEY_UP控制蜂鸣器翻转，",
+        "description": "按键输入 实验 学习GPIO作为输入的使用 1 通过开发板上的四个独立按键控制LED灯或者蜂鸣器: KEY_UP控制蜂鸣器翻转，",
+        "keywords": [
+            "gpio",
+            "led",
+            "key_up",
+            "实验",
+            "按键输入实验",
+            "按键输入",
+            "学习",
+            "作为输入的使用",
+            "通过开发板上的四个独立按",
+            "键控制",
+            "灯或者蜂鸣器",
+            "控制蜂鸣器翻转"
+        ],
+        "core_files_to_read": [
+            "hal/实验3 按键输入实验/readme.txt",
+            "hal/实验3 按键输入实验/User/main.c",
+            "hal/实验3 按键输入实验/User/stm32f4xx_it.c",
+            "hal/实验3 按键输入实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验3 按键输入实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_4_2a37e047",
+        "title": "实验4 外部中断实验",
+        "path": "hal/实验4 外部中断实验",
+        "category": [
+            "hal",
+            "gpio",
+            "exti"
+        ],
+        "summary": "外部中断 实验 学习外部中断的使用 1 通过开发板上的四个独立按键控制LED灯或者蜂鸣器: KEY_UP控制蜂鸣器翻转，",
+        "description": "外部中断 实验 学习外部中断的使用 1 通过开发板上的四个独立按键控制LED灯或者蜂鸣器: KEY_UP控制蜂鸣器翻转，",
+        "keywords": [
+            "led",
+            "key_up",
+            "实验",
+            "外部中断实验",
+            "外部中断",
+            "学习外部中断的使用",
+            "通过开发板上的四个独立按",
+            "键控制",
+            "灯或者蜂鸣器",
+            "控制蜂鸣器翻转"
+        ],
+        "core_files_to_read": [
+            "hal/实验4 外部中断实验/readme.txt",
+            "hal/实验4 外部中断实验/User/main.c",
+            "hal/实验4 外部中断实验/User/stm32f4xx_it.c",
+            "hal/实验4 外部中断实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验4 外部中断实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_5_d0e2b65e",
+        "title": "实验5 串口通信实验",
+        "path": "hal/实验5 串口通信实验",
+        "category": [
+            "hal",
+            "gpio",
+            "usart"
+        ],
+        "summary": "串口通信 实验 学习串口的使用(接收与发送) 1 LED0闪烁,提示程序在运行。 2 STM32通过串口1和上位机对话,STM32在收到串口助手发过来的字符串(以回车换行结束)后,会返回给串口助手。",
+        "description": "串口通信 实验 学习串口的使用(接收与发送) 1 LED0闪烁,提示程序在运行。 2 STM32通过串口1和上位机对话,STM32在收到串口助手发过来的字符串(以回车换行结束)后,会返回给串口助手。",
+        "keywords": [
+            "led0",
+            "实验",
+            "串口通信实验",
+            "串口通信",
+            "学习串口的使用",
+            "接收与发送",
+            "闪烁",
+            "提示程序在运行",
+            "通过串口",
+            "和上位机对话",
+            "在收到串口助手发过来的字",
+            "符串"
+        ],
+        "core_files_to_read": [
+            "hal/实验5 串口通信实验/readme.txt",
+            "hal/实验5 串口通信实验/User/main.c",
+            "hal/实验5 串口通信实验/User/stm32f4xx_it.c",
+            "hal/实验5 串口通信实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验5 串口通信实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_8_8_1_5990fb75",
+        "title": "实验8-1 基本定时中断器实验",
+        "path": "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim"
+        ],
+        "summary": "基本定时器中断 实验 学习基本定时器中断的使用 1 LED0用来指示程序运行,200ms变更一次状态。 LED1用于定时器中断取反,指示定时器中断状态,500ms变更一次状态。",
+        "description": "基本定时器中断 实验 学习基本定时器中断的使用 1 LED0用来指示程序运行,200ms变更一次状态。 LED1用于定时器中断取反,指示定时器中断状态,500ms变更一次状态。",
+        "keywords": [
+            "led0",
+            "ms",
+            "led1",
+            "实验",
+            "基本定时中断器实验",
+            "基本定时器实验",
+            "基本定时器中断",
+            "学习基本定时器中断的使用",
+            "用来指示程序运行",
+            "变更一次状态",
+            "用于定时器中断取反",
+            "指示定时器中断状态"
+        ],
+        "core_files_to_read": [
+            "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验/readme.txt",
+            "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验/User/main.c",
+            "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验/User/stm32f4xx_it.c",
+            "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验8 基本定时器实验/实验8-1 基本定时中断器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_9_9_1_b06de6d0",
+        "title": "实验9-1 通用定时中断器实验",
+        "path": "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim"
+        ],
+        "summary": "通用定时器中断 实验 学习通用定时器中断的使用 1 LED0用来指示程序运行,200ms变更一次状态。 LED1用于定时器中断取反,指示定时器中断状态,500ms变更一次状态。",
+        "description": "通用定时器中断 实验 学习通用定时器中断的使用 1 LED0用来指示程序运行,200ms变更一次状态。 LED1用于定时器中断取反,指示定时器中断状态,500ms变更一次状态。",
+        "keywords": [
+            "led0",
+            "ms",
+            "led1",
+            "实验",
+            "通用定时中断器实验",
+            "通用定时器实验",
+            "通用定时器中断",
+            "学习通用定时器中断的使用",
+            "用来指示程序运行",
+            "变更一次状态",
+            "用于定时器中断取反",
+            "指示定时器中断状态"
+        ],
+        "core_files_to_read": [
+            "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验/readme.txt",
+            "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验/User/main.c",
+            "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验/User/stm32f4xx_it.c",
+            "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验9 通用定时器实验/实验9-1 通用定时中断器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_9_9_2_pwm_9bff0a64",
+        "title": "实验9-2 通用定时器PWM输出实验",
+        "path": "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim",
+            "pwm"
+        ],
+        "summary": "通用定时器PWM输出 实验 学习通用定时器PWM的使用 1 LED0由暗到亮,再由亮到暗,再由暗到亮,依次循环。",
+        "description": "通用定时器PWM输出 实验 学习通用定时器PWM的使用 1 LED0由暗到亮,再由亮到暗,再由暗到亮,依次循环。",
+        "keywords": [
+            "pwm",
+            "led0",
+            "实验",
+            "通用定时器",
+            "输出实验",
+            "通用定时器实验",
+            "输出",
+            "学习通用定时器",
+            "的使用",
+            "由暗到亮",
+            "再由亮到暗",
+            "再由暗到亮"
+        ],
+        "core_files_to_read": [
+            "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验/readme.txt",
+            "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验/User/main.c",
+            "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验/User/stm32f4xx_it.c",
+            "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验9 通用定时器实验/实验9-2 通用定时器PWM输出实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_9_9_3_2023ee02",
+        "title": "实验9-3 通用定时器输入捕获实验",
+        "path": "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验",
+        "category": [
+            "hal",
+            "gpio",
+            "usart",
+            "tim",
+            "input_capture"
+        ],
+        "summary": "通用定时器输入捕获 实验 学习通用定时器输入捕获功能 1 利用TIM5_CH1来做输入捕获,我们将捕获PA0上的高电平脉宽,并将脉宽时间 通过串口打印出来,大家可以通过按WK_UP按键，模拟输入高电平,这里能测试的最长时间为:4194303...",
+        "description": "通用定时器输入捕获 实验 学习通用定时器输入捕获功能 1 利用TIM5_CH1来做输入捕获,我们将捕获PA0上的高电平脉宽,并将脉宽时间 通过串口打印出来,大家可以通过按WK_UP按键，模拟输入高电平,这里能测试的最长时间为:4194303 us。",
+        "keywords": [
+            "tim5_ch1",
+            "pa0",
+            "wk_up",
+            "us",
+            "实验",
+            "通用定时器输入捕获实验",
+            "通用定时器实验",
+            "通用定时器输入捕获",
+            "学习通用定时器输入捕获功",
+            "利用",
+            "来做输入捕获",
+            "我们将捕获"
+        ],
+        "core_files_to_read": [
+            "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验/readme.txt",
+            "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验/User/main.c",
+            "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验/User/stm32f4xx_it.c",
+            "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验9 通用定时器实验/实验9-3 通用定时器输入捕获实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_hal_9_9_4_12f1498e",
+        "title": "实验9-4 通用定时器脉冲计数实验",
+        "path": "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验",
+        "category": [
+            "hal",
+            "gpio",
+            "tim",
+            "input_capture",
+            "encoder"
+        ],
+        "summary": "通用定时器脉冲计数实验 实验 学习通用定时器输入脉冲计数 1 利用TIM2_CH1来做输入捕获， 我们将捕获PA0上的上升沿，通过按WK_UP按键读取CNT和溢出次数, 经过简单计算, 可以得到当前的计数值, 从而实现脉冲计数",
+        "description": "通用定时器脉冲计数实验 实验 学习通用定时器输入脉冲计数 1 利用TIM2_CH1来做输入捕获， 我们将捕获PA0上的上升沿，通过按WK_UP按键读取CNT和溢出次数, 经过简单计算, 可以得到当前的计数值, 从而实现脉冲计数",
+        "keywords": [
+            "tim2_ch1",
+            "pa0",
+            "wk_up",
+            "cnt",
+            "实验",
+            "通用定时器脉冲计数实验",
+            "通用定时器实验",
+            "学习通用定时器输入脉冲计",
+            "利用",
+            "来做输入捕获",
+            "我们将捕获",
+            "上的上升沿"
+        ],
+        "core_files_to_read": [
+            "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验/readme.txt",
+            "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验/User/main.c",
+            "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验/User/stm32f4xx_it.c",
+            "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验/User/stm32f4xx_hal_conf.h",
+            "hal/实验9 通用定时器实验/实验9-4 通用定时器脉冲计数实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_sensors_30_ds18b20_6dcce202",
+        "title": "实验30 DS18B20数字温度传感器实验",
+        "path": "sensors/实验30 DS18B20数字温度传感器实验",
+        "category": [
+            "sensors",
+            "sensor"
+        ],
+        "summary": "DS18B20数字温度传感器 实验 学习DS18B20数字温度传感器的使用 1 本实验开机的时候先检测是否有DS18B20存在，如果没有，则提示错误。只有在检测到DS18B20之后才开始 读取温度并显示在LCD上，如果发现了DS18B20...",
+        "description": "DS18B20数字温度传感器 实验 学习DS18B20数字温度传感器的使用 1 本实验开机的时候先检测是否有DS18B20存在，如果没有，则提示错误。只有在检测到DS18B20之后才开始 读取温度并显示在LCD上，如果发现了DS18B20，则程序每隔100ms左右读取一次数据，并把温度显示在LCD上。",
+        "keywords": [
+            "ds18b20",
+            "sensors",
+            "lcd",
+            "ms",
+            "实验",
+            "数字温度传感器实验",
+            "数字温度传感器",
+            "学习",
+            "数字温度传感器的使用",
+            "本实验开机的时候先检测是",
+            "否有",
+            "存在"
+        ],
+        "core_files_to_read": [
+            "sensors/实验30 DS18B20数字温度传感器实验/readme.txt",
+            "sensors/实验30 DS18B20数字温度传感器实验/User/main.c",
+            "sensors/实验30 DS18B20数字温度传感器实验/User/stm32f4xx_it.c",
+            "sensors/实验30 DS18B20数字温度传感器实验/User/stm32f4xx_hal_conf.h",
+            "sensors/实验30 DS18B20数字温度传感器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_sensors_31_dht11_396566c6",
+        "title": "实验31 DHT11数字温湿度传感器实验",
+        "path": "sensors/实验31 DHT11数字温湿度传感器实验",
+        "category": [
+            "sensors",
+            "sensor"
+        ],
+        "summary": "DHT11数字温湿度传感器 实验 学习DHT11数字温度传感器的使用 1 本实验开机的时候先检测是否有DHT11存在，如果没有，则提示错误。只有在检测到DHT11之后才开始读取 温湿度值，并显示在LCD上，如果发现了DHT11，则程序每隔1...",
+        "description": "DHT11数字温湿度传感器 实验 学习DHT11数字温度传感器的使用 1 本实验开机的时候先检测是否有DHT11存在，如果没有，则提示错误。只有在检测到DHT11之后才开始读取 温湿度值，并显示在LCD上，如果发现了DHT11，则程序每隔100ms左右读取一次数据，并把温湿度显示在LCD上。",
+        "keywords": [
+            "dht11",
+            "sensors",
+            "lcd",
+            "ms",
+            "实验",
+            "数字温湿度传感器实验",
+            "数字温湿度传感器",
+            "学习",
+            "数字温度传感器的使用",
+            "本实验开机的时候先检测是",
+            "否有",
+            "存在"
+        ],
+        "core_files_to_read": [
+            "sensors/实验31 DHT11数字温湿度传感器实验/readme.txt",
+            "sensors/实验31 DHT11数字温湿度传感器实验/User/main.c",
+            "sensors/实验31 DHT11数字温湿度传感器实验/User/stm32f4xx_it.c",
+            "sensors/实验31 DHT11数字温湿度传感器实验/User/stm32f4xx_hal_conf.h",
+            "sensors/实验31 DHT11数字温湿度传感器实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_sensors_32_v3_5_b6907d96",
+        "title": "实验32 三轴传感器(支持硬件版本V3.5)",
+        "path": "sensors/实验32 三轴传感器(支持硬件版本V3.5)",
+        "category": [
+            "sensors",
+            "sensor"
+        ],
+        "summary": "三轴加速度计 实验 学习三轴传感器QMA6100P的使用 1 本实验,开机先检测QMA6100P是否存在，如检测不到QMA6100P，则在监视器显示报错信息。如果检测到QMA6100P， 则显示正常，并在主循环里面，循环读取三轴XYZ原始数...",
+        "description": "三轴加速度计 实验 学习三轴传感器QMA6100P的使用 1 本实验,开机先检测QMA6100P是否存在，如检测不到QMA6100P，则在监视器显示报错信息。如果检测到QMA6100P， 则显示正常，并在主循环里面，循环读取三轴XYZ原始数据和俯仰角、翻滚角、加速度的传感器数据，",
+        "keywords": [
+            "v3",
+            "sensors",
+            "qma6100p",
+            "xyz",
+            "实验",
+            "三轴传感器",
+            "支持硬件版本",
+            "三轴加速度计",
+            "学习三轴传感器",
+            "的使用",
+            "本实验",
+            "开机先检测"
+        ],
+        "core_files_to_read": [
+            "sensors/实验32 三轴传感器(支持硬件版本V3.5)/readme.txt",
+            "sensors/实验32 三轴传感器(支持硬件版本V3.5)/User/main.c",
+            "sensors/实验32 三轴传感器(支持硬件版本V3.5)/User/stm32f4xx_it.c",
+            "sensors/实验32 三轴传感器(支持硬件版本V3.5)/User/stm32f4xx_hal_conf.h",
+            "sensors/实验32 三轴传感器(支持硬件版本V3.5)/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    },
+    {
+        "id": "example_sensors_32_17399ca3",
+        "title": "实验32 磁力计实验",
+        "path": "sensors/实验32 磁力计实验",
+        "category": [
+            "sensors",
+            "sensor"
+        ],
+        "summary": "磁力计 实验 学习磁力计ST480MC的使用 1 本实验开机的时候先检测是否有ST480MC存在，如果没有，则提示错误。如果检测到ST480MC,则每隔200ms读取一次 X,Y,Z,T的原始数据，并将XY转换为角度数据，T转换为温度数据...",
+        "description": "磁力计 实验 学习磁力计ST480MC的使用 1 本实验开机的时候先检测是否有ST480MC存在，如果没有，则提示错误。如果检测到ST480MC,则每隔200ms读取一次 X,Y,Z,T的原始数据，并将XY转换为角度数据，T转换为温度数据，然后将这些数据显示到LCD。如果数据偏差较大，",
+        "keywords": [
+            "sensors",
+            "st480mc",
+            "ms",
+            "xy",
+            "lcd",
+            "实验",
+            "磁力计实验",
+            "磁力计",
+            "学习磁力计",
+            "的使用",
+            "本实验开机的时候先检测是",
+            "否有"
+        ],
+        "core_files_to_read": [
+            "sensors/实验32 磁力计实验/readme.txt",
+            "sensors/实验32 磁力计实验/User/main.c",
+            "sensors/实验32 磁力计实验/User/stm32f4xx_it.c",
+            "sensors/实验32 磁力计实验/User/stm32f4xx_hal_conf.h",
+            "sensors/实验32 磁力计实验/User/stm32f4xx_it.h"
+        ],
+        "has_ioc": false,
+        "has_user_dir": true
+    }
+]

@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "path_glob": "Core/Src/main.c",
+      "classification": "cubemx_generated",
+      "generated_by": "cubemx",
+      "editable_strategy": "user_sections_only",
+      "notes": [
+        "只允许改 USER CODE 区块",
+        "不要改系统初始化和 CubeMX 生成函数签名"
+      ]
+    },
+    {
+      "path_glob": "Core/Src/stm32f4xx_it.c",
+      "classification": "cubemx_generated",
+      "generated_by": "cubemx",
+      "editable_strategy": "user_sections_only",
+      "notes": [
+        "优先改 HAL 回调或 USER CODE 区块，不要破坏默认中断框架"
+      ]
+    },
+    {
+      "path_glob": "Core/Src/stm32f4xx_hal_msp.c",
+      "classification": "cubemx_generated",
+      "generated_by": "cubemx",
+      "editable_strategy": "avoid_manual_edit",
+      "notes": [
+        "除非任务直接需要，否则不要手工改 MSP 文件"
+      ]
+    },
+    {
+      "path_glob": "Core/Src/app_*.c",
+      "classification": "user_owned",
+      "generated_by": "user",
+      "editable_strategy": "free_edit",
+      "notes": [
+        "业务层模块，可自由维护"
+      ]
+    },
+    {
+      "path_glob": "Core/Inc/app_*.h",
+      "classification": "user_owned",
+      "generated_by": "user",
+      "editable_strategy": "free_edit",
+      "notes": [
+        "业务层头文件，可自由维护"
+      ]
+    },
+    {
+      "path_glob": "Core/Src/bsp_*.c",
+      "classification": "user_owned",
+      "generated_by": "user",
+      "editable_strategy": "free_edit",
+      "notes": [
+        "板级驱动文件，可自由维护"
+      ]
+    },
+    {
+      "path_glob": "Core/Inc/bsp_*.h",
+      "classification": "user_owned",
+      "generated_by": "user",
+      "editable_strategy": "free_edit",
+      "notes": [
+        "板级驱动头文件，可自由维护"
+      ]
+    }
+  ]
+}

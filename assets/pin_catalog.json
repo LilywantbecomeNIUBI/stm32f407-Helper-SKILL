@@ -1,0 +1,187 @@
+[
+  {
+    "id": "pin_led_board",
+    "category": ["gpio"],
+    "resource": "board_led",
+    "keywords": ["led", "gpio", "跑马灯", "板载led"],
+    "pins": [],
+    "hints": [
+      "若复用板载 LED 引脚，需先确认不会影响现有指示灯功能",
+      "将新 GPIO 输出功能映射到板载资源前，先检查当前工程是否已初始化该引脚"
+    ],
+    "conflicts_with": [],
+    "notes": "第一版可先不写具体引脚号，后续再从引脚分配表补全"
+  },
+  {
+    "id": "pin_key_board",
+    "category": ["key", "exti"],
+    "resource": "board_keys",
+    "keywords": ["key", "button", "按键", "外部中断", "exti"],
+    "pins": [],
+    "hints": [
+      "若使用板载按键做输入或 EXTI，先确认该引脚未被其他功能占用",
+      "按键类引脚通常需要结合上拉/下拉和中断触发边沿一起确认"
+    ],
+    "conflicts_with": [],
+    "notes": "后续可细化为 KEY0 / KEY1 / WKUP 等独立资源"
+  },
+  {
+    "id": "pin_beep_board",
+    "category": ["beep", "gpio", "pwm"],
+    "resource": "board_beep",
+    "keywords": ["beep", "buzzer", "蜂鸣器"],
+    "pins": [],
+    "hints": [
+      "若板载蜂鸣器由普通 GPIO 控制，可直接视为 GPIO 输出资源",
+      "若希望做音调输出，需进一步确认是否可挂接到定时器 PWM 通道"
+    ],
+    "conflicts_with": [],
+    "notes": "后续可补具体端口、是否支持 PWM 复用"
+  },
+  {
+    "id": "pin_usart_debug",
+    "category": ["usart"],
+    "resource": "debug_uart",
+    "keywords": ["uart", "usart", "串口", "调试串口", "printf"],
+    "pins": [],
+    "hints": [
+      "若使用板载调试串口，先确认它与下载、日志输出或串口助手链路是否共用",
+      "做 printf 重定向时，优先选一个稳定、已接出的串口资源"
+    ],
+    "conflicts_with": ["usb_to_uart", "board_console"],
+    "notes": "后续可细化到 USART1 / USART2 / USART3 及其 TX/RX 引脚"
+  },
+  {
+    "id": "pin_tim_pwm",
+    "category": ["tim", "pwm", "input_capture", "encoder"],
+    "resource": "tim_channels",
+    "keywords": ["tim", "timer", "pwm", "输入捕获", "编码器"],
+    "pins": [],
+    "hints": [
+      "定时器任务不仅要确认 TIM 实例，还要确认具体 Channel 与 GPIO AF 映射",
+      "若用于 PWM、输入捕获或编码器，优先避开已被板载显示、串口或存储资源占用的引脚"
+    ],
+    "conflicts_with": ["display_bus", "camera_bus", "sdio_bus"],
+    "notes": "后续建议拆成 TIM1/TIM2/TIM3/TIM4 等更细粒度记录"
+  },
+  {
+    "id": "pin_adc_inputs",
+    "category": ["adc"],
+    "resource": "adc_channels",
+    "keywords": ["adc", "采样", "模拟量", "电压采集"],
+    "pins": [],
+    "hints": [
+      "ADC 引脚应配置为 Analog 模式，避免被数字功能复用",
+      "若使用板载模拟传感器或电压测量通道，先确认该通道是否已经接到固定硬件"
+    ],
+    "conflicts_with": ["digital_gpio_reuse"],
+    "notes": "后续可细化为 ADC1_INx 与实际板载资源映射"
+  },
+  {
+    "id": "pin_i2c_bus",
+    "category": ["iic", "sensor", "oled"],
+    "resource": "i2c_bus",
+    "keywords": ["iic", "i2c", "scl", "sda", "oled", "传感器"],
+    "pins": [],
+    "hints": [
+      "若 OLED 或传感器走 I2C，总线引脚必须与板载硬件连接方式一致",
+      "除确认 SCL/SDA 外，还要确认是否已有外部上拉或板载默认连接"
+    ],
+    "conflicts_with": ["other_i2c_devices"],
+    "notes": "后续可细化为 I2C1 / I2C2 / I2C3"
+  },
+  {
+    "id": "pin_spi_bus",
+    "category": ["spi", "sensor", "oled", "tft"],
+    "resource": "spi_bus",
+    "keywords": ["spi", "sck", "miso", "mosi", "flash", "显示", "传感器"],
+    "pins": [],
+    "hints": [
+      "SPI 不仅要确认 SCK/MISO/MOSI，还要确认片选脚 CS 是否由普通 GPIO 控制",
+      "若板载屏幕或 Flash 已占用某组 SPI，引入新设备时要先检查总线共享关系"
+    ],
+    "conflicts_with": ["board_flash", "display_bus"],
+    "notes": "后续可细化为 SPI1 / SPI2 / SPI3"
+  },
+  {
+    "id": "pin_oled_display",
+    "category": ["oled"],
+    "resource": "board_oled",
+    "keywords": ["oled", "显示", "字符串显示"],
+    "pins": [],
+    "hints": [
+      "先确认 OLED 走 I2C 还是 SPI，再决定需要检查哪组引脚",
+      "若直接迁移例程，必须确认显示接口与当前板载连接方式一致"
+    ],
+    "conflicts_with": ["i2c_bus", "spi_bus"],
+    "notes": "第一版只保留接口级提示，后续再填具体脚位"
+  },
+  {
+    "id": "pin_tft_display",
+    "category": ["tft"],
+    "resource": "board_tft",
+    "keywords": ["tft", "lcd", "fsmc", "液晶"],
+    "pins": [],
+    "hints": [
+      "TFT 类资源通常占用大量引脚，优先视为高冲突资源",
+      "涉及 FSMC 或并口屏时，不要轻易复用相关 GPIO 做普通功能"
+    ],
+    "conflicts_with": ["fsmc_bus", "general_gpio_reuse"],
+    "notes": "后续可将数据总线、控制脚、背光脚拆开维护"
+  },
+  {
+    "id": "pin_sensor_irq",
+    "category": ["sensor", "exti"],
+    "resource": "sensor_irq_pins",
+    "keywords": ["sensor", "irq", "中断脚", "drdy", "int"],
+    "pins": [],
+    "hints": [
+      "若传感器带中断脚，需同时检查 GPIO 输入配置和 EXTI 线占用",
+      "同一 EXTI line 可能与其他引脚共享，需要优先检查冲突"
+    ],
+    "conflicts_with": ["exti_line_shared"],
+    "notes": "适用于 MPU、磁力计、无线模块等带中断输出的器件"
+  },
+  {
+    "id": "pin_touch_panel",
+    "category": ["touch", "tft"],
+    "resource": "touch_panel",
+    "keywords": ["touch", "tp", "触摸", "触摸屏", "校准", "坐标"],
+    "pins": [],
+    "hints": [
+      "触摸屏通常和 TFT 屏幕一起使用，先确认显示总线与触摸总线是否共用或交叉占用",
+      "先确认触摸控制器接口类型（GPIO / SPI / I2C / ADC），再决定 CubeMX 里需要启用哪些外设",
+      "如果有触摸中断脚或复位脚，优先检查它们是否和现有 EXTI、背光、显示控制脚冲突"
+    ],
+    "conflicts_with": ["display_bus", "spi_bus", "adc_inputs", "exti_line_shared"],
+    "notes": "当前先保留接口级提醒；具体 X+/X-/Y+/Y- 或触摸控制器引脚可后续按板卡资源表细化"
+  },
+  {
+    "id": "pin_audio_codec",
+    "category": ["audio"],
+    "resource": "audio_codec",
+    "keywords": ["audio", "music", "wav", "i2s", "iis", "es8388", "音频", "音乐", "播放器"],
+    "pins": [],
+    "hints": [
+      "音频播放通常至少涉及音频数据总线、编解码器控制总线和 SD/FATFS 文件源三条链路",
+      "先确认 I2S / IIS / SAI 时钟、数据脚和 DMA，再确认编解码器控制口与功放/耳机输出使能脚",
+      "若板上已有 ES8388、WM8978 或类似编解码器，优先把它视为高冲突资源，不要只凭空猜测引脚"
+    ],
+    "conflicts_with": ["i2c_bus", "spi_bus", "display_bus"],
+    "notes": "当前以链路级提醒为主；具体 BCLK/LRCK/MCLK/SDIN/SDOUT 及 codec 控制口可后续补充"
+  },
+  {
+    "id": "pin_fsmc_sram",
+    "category": ["fsmc", "sram", "tft"],
+    "resource": "fsmc_sram_bus",
+    "keywords": ["fsmc", "fmc", "sram", "external sram", "8080", "mcu screen", "mcu屏", "外部sram"],
+    "pins": [],
+    "hints": [
+      "FSMC/FMC 类资源通常是一整组地址线、数据线和控制线一起占用，先确认不是只空出了一两个 GPIO 就开始迁移。",
+      "如果 MCU 屏和外部 SRAM 同时挂在 FSMC/FMC 上，优先检查 NE/NOE/NWE、数据宽度和 Bank 选择是否互相冲突。",
+      "外部 SRAM 若被用作字库、图片缓存或显示缓冲区，还要一并检查 SD/FATFS 到 SRAM 再到 LCD 的数据路径。"
+    ],
+    "conflicts_with": ["board_tft", "spi_bus", "general_gpio_reuse"],
+    "notes": "用于 FSMC/FMC 并口屏、外部 SRAM 和共享显示总线场景的资源级提醒。"
+  }
+]

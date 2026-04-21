@@ -1,0 +1,84 @@
+{
+  "preferred_path_markers": [
+    "user",
+    "src",
+    "inc",
+    "core/src",
+    "core/inc",
+    "drivers/bsp",
+    "drivers/system"
+  ],
+  "focus_filenames": [
+    "main.c",
+    "main.h",
+    "stm32f4xx_it.c",
+    "stm32f4xx_it.h",
+    "stm32f4xx_hal_msp.c",
+    "stm32f4xx_hal_conf.h",
+    "gpio.c",
+    "gpio.h"
+  ],
+  "ignore_dir_names": [
+    "output",
+    "mdk-arm",
+    "rte",
+    "debug",
+    "release",
+    "listings",
+    "objects",
+    ".settings",
+    ".vscode",
+    "__macosx"
+  ],
+  "ignore_path_markers": [
+    "drivers/cmsis",
+    "drivers/stm32f4xx_hal_driver",
+    "projects/mdk-arm",
+    "mdk-arm/rte",
+    "output"
+  ],
+  "ignore_suffixes": [
+    ".uvprojx",
+    ".uvoptx",
+    ".axf",
+    ".bin",
+    ".hex",
+    ".map",
+    ".lst",
+    ".list",
+    ".o",
+    ".d",
+    ".tmp"
+  ],
+  "module_path_keywords": {
+    "gpio": ["gpio", "led"],
+    "key": ["key", "button"],
+    "beep": ["beep", "buzzer"],
+    "exti": ["exti", "exit"],
+    "usart": ["uart", "usart", "serial"],
+    "tim": ["tim", "timer", "delay"],
+    "pwm": ["pwm"],
+    "input_capture": ["capture"],
+    "encoder": ["encoder"],
+    "adc": ["adc"],
+    "dma": ["dma"],
+    "iic": ["iic", "i2c"],
+    "spi": ["spi"],
+    "oled": ["oled", "ssd1306"],
+    "tft": ["tft", "lcd"],
+    "touch": ["touch", "tp"],
+    "audio": ["audio", "music", "wav", "i2s", "iis", "es8388"],
+    "sensor": ["sensor", "ds18b20", "dht11", "mpu", "nrf24l01"]
+  },
+  "system_focus_by_module": {
+    "usart": ["drivers/system/usart"],
+    "tim": ["drivers/system/delay", "drivers/system/sys"],
+    "gpio": ["drivers/bsp/led"],
+    "key": ["drivers/bsp/key"],
+    "beep": ["drivers/bsp/beep"],
+    "oled": ["drivers/bsp/oled"],
+    "tft": ["drivers/bsp/lcd", "drivers/bsp/tft"],
+    "touch": ["drivers/bsp/touch", "drivers/bsp/lcd"],
+    "audio": ["user/app", "drivers/bsp/es8388", "drivers/bsp/wm8978"]
+  }
+}
